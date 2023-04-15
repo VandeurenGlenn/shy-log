@@ -1,7 +1,7 @@
 import EasyWorker from '@vandeurenglenn/easy-worker'
-import Storage from '@leofcoin/storage'
-const worker = new EasyWorker()
-const logStore = new Storage('log')
+import {LeofcoinStorage} from '@leofcoin/storage'
+const worker: EasyWorker = new EasyWorker()
+const logStore = new LeofcoinStorage('log')
 await logStore.init()
 
 declare type messageType = 'put' | 'get'
