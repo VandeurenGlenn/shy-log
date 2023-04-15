@@ -2,15 +2,27 @@
   "name": "@leofcoin/shy-log",
   "version": "1.0.0",
   "description": "log worker",
-  "main": "index.js",
   "type": "module",
+  "exports": {
+    "./client": {
+      "import": "./exports/client.js",
+      "types": "./exports/client.d.ts"
+    },
+    "./worker": {
+      "import": "./exports/worker.js",
+      "types": "./exports/worker.d.ts"
+    }
+  },
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "./exports"
+  ],
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@leofcoin/storage": "^3.3.2",
     "@vandeurenglenn/easy-worker": "^1.0.2"
