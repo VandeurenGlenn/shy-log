@@ -1,6 +1,6 @@
 import EasyWorker from '@vandeurenglenn/easy-worker'
 
-const worker = await new EasyWorker('./node_modules/@laofcoin/shy-log/exports/worker.js')
+const worker = await new EasyWorker('./node_modules/@leofcoin/shy-log/exports/worker.js')
 
 export const log = (input: string) => worker.postMessage({type: 'put', input})
 
