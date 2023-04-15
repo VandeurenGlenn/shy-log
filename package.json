@@ -1,6 +1,6 @@
 {
   "name": "@leofcoin/shy-log",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "log worker",
   "type": "module",
   "exports": {
